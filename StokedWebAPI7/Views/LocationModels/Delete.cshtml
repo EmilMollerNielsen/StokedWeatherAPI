@@ -1,0 +1,169 @@
+﻿@model StokedWebAPI7.Models.LocationModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>LocationModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationLat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationLat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationLong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationLong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LocationDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSurfLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsSurfLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsSUPLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsSUPLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsWhiteWaterLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsWhiteWaterLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.showLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.showLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SurfDifficulty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurfDifficulty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SUPDifficulty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SUPDifficulty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WhiteWaterDifficulty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WhiteWaterDifficulty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageData)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageData)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BestWindSpeed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BestWindSpeed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BestWindDirection)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BestWindDirection)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BestWaveHeight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BestWaveHeight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BestWaveDirection)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BestWaveDirection)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

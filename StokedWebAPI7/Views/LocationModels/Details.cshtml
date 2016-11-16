@@ -1,0 +1,180 @@
+﻿@model StokedWebAPI7.Models.LocationModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LocationModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @*@Html.DisplayNameFor(model => model.LocationName)*@
+            <p>Location name:</p>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationName)
+        </dd>
+
+        <dt>
+            <p>Latitude:</p>
+            @*@Html.DisplayNameFor(model => model.LocationLat)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationLat)
+        </dd>
+
+        <dt>
+            <p>Longitude:</p>
+            @*@Html.DisplayNameFor(model => model.LocationLong)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationLong)
+        </dd>
+
+        <dt>
+            <p>Description:</p>
+            @*@Html.DisplayNameFor(model => model.LocationDescription)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LocationDescription)
+        </dd>
+
+        <dt>
+            <p>Surf location?</p>
+            @*@Html.DisplayNameFor(model => model.IsSurfLocation)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsSurfLocation)
+        </dd>
+
+        <dt>
+            <p>SUP location?</p>
+            @*@Html.DisplayNameFor(model => model.IsSUPLocation)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsSUPLocation)
+        </dd>
+
+        <dt>
+            <p>White water location?</p>
+            @*@Html.DisplayNameFor(model => model.IsWhiteWaterLocation)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsWhiteWaterLocation)
+        </dd>
+
+        <dt>
+            <p>Show on map?</p>
+            @*@Html.DisplayNameFor(model => model.showLocation)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.showLocation)
+        </dd>
+
+        <dt>
+            <p>Creation date:</p>
+            @*@Html.DisplayNameFor(model => model.CreationDate)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreationDate)
+        </dd>
+
+        <dt>
+            <p>Surf difficulty</p>
+            @*@Html.DisplayNameFor(model => model.SurfDifficulty)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurfDifficulty)
+        </dd>
+
+        <dt>
+            <p>SUP difficulty:</p>
+            @*@Html.DisplayNameFor(model => model.SUPDifficulty)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SUPDifficulty)
+        </dd>
+
+        <dt>
+            <p>White water difficulty:</p>
+            @*@Html.DisplayNameFor(model => model.WhiteWaterDifficulty)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WhiteWaterDifficulty)
+        </dd>
+
+        <dt>
+            <p>Chosen image: (NOT DONE)</p>
+            @*@Html.DisplayNameFor(model => model.ImageData)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageData)
+        </dd>
+
+        <dt>
+            <p>Best wind speed:</p>
+            @*@Html.DisplayNameFor(model => model.BestWindSpeed)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BestWindSpeed)
+        </dd>
+
+        <dt>
+            <p>Best wind direction:</p>
+            @*@Html.DisplayNameFor(model => model.BestWindDirection)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BestWindDirection)
+        </dd>
+
+        <dt>
+            <p>Best wave height:</p>
+            @*@Html.DisplayNameFor(model => model.BestWaveHeight)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BestWaveHeight)
+        </dd>
+
+        <dt>
+            <p>Best wave direction:</p>
+            @*@Html.DisplayNameFor(model => model.BestWaveDirection)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BestWaveDirection)
+        </dd>
+
+        <dt>
+            <p>Created by:</p>
+            @*@Html.DisplayNameFor(model => model.FullName)*@
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LocationId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

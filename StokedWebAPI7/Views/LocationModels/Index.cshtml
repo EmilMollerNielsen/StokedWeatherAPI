@@ -1,0 +1,154 @@
+﻿@model IEnumerable<StokedWebAPI7.Models.LocationModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            <p>ID</p>
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.LocationName)*@
+            <p>Location</p>
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.LocationLat)*@
+            <p>Latitude</p>
+        </th>
+        <th>
+            @* @Html.DisplayNameFor(model => model.LocationLong)*@
+            <p>Longitude</p>
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.LocationDescription)
+            </th>*@
+        <th>
+            @*@Html.DisplayNameFor(model => model.IsSurfLocation)*@
+            Surf location
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.IsSUPLocation)*@
+            <p>SUP location</p>
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.IsWhiteWaterLocation)*@
+            <p>WW location</p>
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.showLocation)*@
+            <p>Show on map</p>
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.CreationDate)*@
+            <p>Creation date</p>
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.SurfDifficulty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SUPDifficulty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WhiteWaterDifficulty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageData)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BestWindSpeed)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BestWindDirection)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BestWaveHeight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BestWaveDirection)
+            </th>*@
+        <th>
+            @*@Html.DisplayNameFor(model => model.FullName)*@
+            <p>Created by</p>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationLat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LocationLong)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.LocationDescription)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.IsSurfLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsSUPLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsWhiteWaterLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.showLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreationDate)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.SurfDifficulty)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SUPDifficulty)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.WhiteWaterDifficulty)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImageData)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BestWindSpeed)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BestWindDirection)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BestWaveHeight)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BestWaveDirection)
+                </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.LocationId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.LocationId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.LocationId })
+            </td>
+        </tr>
+
+    }
+
+
+</table>
