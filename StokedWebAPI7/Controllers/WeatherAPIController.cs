@@ -14,7 +14,7 @@ namespace StokedWebAPI7.Controllers
         
         public object Get(int id)
         {
-            var fileContents = System.IO.File.ReadAllText(HostingEnvironment.MapPath(@"~/App_Data/" + id + ".txt"));
+            var fileContents = System.IO.File.ReadAllText(HostingEnvironment.MapPath(@"~/WeatherJson/" + id + ".txt"));
 
             var cleanedUpFile = JsonConvert.DeserializeObject<object>(fileContents);
 
