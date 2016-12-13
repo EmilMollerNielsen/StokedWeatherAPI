@@ -7,17 +7,9 @@ using System.Web;
 
 namespace StokedWebAPI7.Models
 {
-    //[Table("Locations")]
+    //This is our location class.
     public class LocationModel
     {
-        //public LocationModel()
-        //{
-        //    showLocation = true;
-        //    IsSUPLocation = false;
-        //    IsSurfLocation = false;
-        //    IsWhiteWaterLocation = false;
-        //}
-
         //Location ID
         [Key]
         public int LocationId { get; set; }
@@ -48,8 +40,11 @@ namespace StokedWebAPI7.Models
         public DateTime CreationDate { get; set; }
 
         //Difficulty
+        
         public int SurfDifficulty { get; set; }
+        
         public int SUPDifficulty { get; set; }
+       
         public int WhiteWaterDifficulty { get; set; }
 
         //Imagedata

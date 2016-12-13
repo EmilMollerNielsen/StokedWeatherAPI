@@ -8,6 +8,8 @@ using StokedWebAPI7.Models;
 
 namespace StokedWebAPI7.Repository
 {
+    //This class handles all database queries.
+    //Every method corresponds to a method in the LocationModelsController.
     public class LocationRepository : iLocationRepository
     {
         

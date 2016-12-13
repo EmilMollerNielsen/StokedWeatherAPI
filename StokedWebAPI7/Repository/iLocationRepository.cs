@@ -6,6 +6,7 @@ using StokedWebAPI7.Models;
 
 namespace StokedWebAPI7.Repository
 {
+    //This is the interface LocationRepository inherits.
     public interface iLocationRepository
     {
         IEnumerable<LocationModel> GetAll();

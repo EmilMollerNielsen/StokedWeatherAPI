@@ -19,7 +19,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">Location name:</label>
-            @*@Html.LabelFor(model => model.LocationName, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.LocationName, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.LocationName, "", new { @class = "text-danger" })
@@ -28,7 +27,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">Latitude:</label>
-            @*@Html.LabelFor(model => model.LocationLat, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.LocationLat, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.LocationLat, "", new { @class = "text-danger" })
@@ -37,7 +35,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">Longitude:</label>
-            @*@Html.LabelFor(model => model.LocationLong, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.LocationLong, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.LocationLong, "", new { @class = "text-danger" })
@@ -46,7 +43,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">Description:</label>
-            @*@Html.LabelFor(model => model.LocationDescription, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.LocationDescription, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.LocationDescription, "", new { @class = "text-danger" })
@@ -55,7 +51,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">Surf location?</label>
-            @*@Html.LabelFor(model => model.IsSurfLocation, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 <div class="checkbox">
                     @Html.EditorFor(model => model.IsSurfLocation)
@@ -66,7 +61,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">SUP location?</label>
-            @*@Html.LabelFor(model => model.IsSUPLocation, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 <div class="checkbox">
                     @Html.EditorFor(model => model.IsSUPLocation)
@@ -77,7 +71,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">White water location?</label>
-            @*@Html.LabelFor(model => model.IsWhiteWaterLocation, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 <div class="checkbox">
                     @Html.EditorFor(model => model.IsWhiteWaterLocation)
@@ -88,7 +81,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">Show on map?</label>
-            @*@Html.LabelFor(model => model.showLocation, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 <div class="checkbox">
                     @Html.EditorFor(model => model.showLocation)
@@ -99,7 +91,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">Creation date:</label>
-            @*@Html.LabelFor(model => model.CreationDate, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.CreationDate, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.CreationDate, "", new { @class = "text-danger" })
@@ -108,7 +99,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">Surf difficulty:</label>
-            @*@Html.LabelFor(model => model.SurfDifficulty, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.SurfDifficulty, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.SurfDifficulty, "", new { @class = "text-danger" })
@@ -117,7 +107,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">SUP difficulty:</label>
-            @*@Html.LabelFor(model => model.SUPDifficulty, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.SUPDifficulty, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.SUPDifficulty, "", new { @class = "text-danger" })
@@ -126,25 +115,22 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">White water difficulty:</label>
-            @*@Html.LabelFor(model => model.WhiteWaterDifficulty, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.WhiteWaterDifficulty, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.WhiteWaterDifficulty, "", new { @class = "text-danger" })
             </div>
         </div>
 
-        <div class="form-group">
+        @*<div class="form-group">
             <label class="control-label col-md-2">Choose image(NOT DONE):</label>
-            @*@Html.LabelFor(model => model.ImageData, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.ImageData, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.ImageData, "", new { @class = "text-danger" })
             </div>
-        </div>
+        </div>*@
 
         <div class="form-group">
             <label class="control-label col-md-2">Best wind speed:</label>
-            @*@Html.LabelFor(model => model.BestWindSpeed, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.BestWindSpeed, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.BestWindSpeed, "", new { @class = "text-danger" })
@@ -153,7 +139,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">Best wind direction:</label>
-            @*@Html.LabelFor(model => model.BestWindDirection, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.BestWindDirection, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.BestWindDirection, "", new { @class = "text-danger" })
@@ -162,7 +147,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">Best wave height:</label>
-            @*@Html.LabelFor(model => model.BestWaveHeight, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.BestWaveHeight, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.BestWaveHeight, "", new { @class = "text-danger" })
@@ -171,7 +155,6 @@
 
         <div class="form-group">
             <label class="control-label col-md-2">Best wave direction:</label>
-            @*@Html.LabelFor(model => model.BestWaveDirection, htmlAttributes: new { @class = "control-label col-md-2" })*@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.BestWaveDirection, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.BestWaveDirection, "", new { @class = "text-danger" })

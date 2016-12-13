@@ -17,14 +17,17 @@ namespace StokedWebAPI7.Controllers
 {
     public class APIController : ApiController
     {
+
+        //This class is the API controller, that returns a list of locations from the database.
+        //It will call the GetAll() from LocationRepository and return the variable as a JSON file. 
         private LocationRepository locationRepository;
-
-
+        
         public APIController()
         {
             locationRepository = new LocationRepository();
         }
 
+        //We dont need to specify that the method should return the items in the list as a JSON file as this is happening automatically. 
         public IEnumerable<LocationModel> Get()
         {
             // retrive the data from table  
