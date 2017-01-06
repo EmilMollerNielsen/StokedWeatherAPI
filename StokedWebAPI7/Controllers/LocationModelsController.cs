@@ -25,7 +25,8 @@ namespace StokedAPI6.Controllers
         //"timeInterval" is related to how many times a day we would like our weatherdata. e.g. 24 = 1 time a day and 3(which is default by WWO) = 8 times a day (24/8 = 3). 
         //"result" is a string we use to gather the response from WWO.
         private const string URL = "http://api.worldweatheronline.com/premium/v1/marine.ashx";
-        private const string key = "?key=c61de12a0f854c92bc0102010160211&q=";
+        //old key c61de12a0f854c92bc0102010160211
+        private const string key = "?key=d990f7c7e04847f7ba8130405170301&q=";
         private const string format = "&format=JSON";
         private const string timeInterval = "&tp=24";
         private string result;
